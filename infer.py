@@ -27,7 +27,7 @@ class Predictor():
         print(f"Save image to {save_img_path}")
 
     def predict(self, image, num , outpath='sample/results.png'):
-        outpath=f'sample1/results_{image}_{num}.png'
+        outpath=f'output/results_{image}_{num}.png'
         image = 'sample/'+image
         img = cv2.imread(image+'_masked.jpg')
         img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
